@@ -9,7 +9,7 @@ This directory contains the interactive administrative dashboard for the **ColdM
 *   **⚡ Modern Stack**: React 19, Vite, TypeScript, and Tailwind CSS.
 *   **📊 Interactive Visualizations**: Dynamic charts powered by `Recharts` for batch thermal profiles, anomaly timelines, and classification statistics.
 *   **📂 Direct CSV Ingestion**: Employs `PapaParse` to parse the Python notebook exports client-side, allowing the dashboard to be run locally or deployed statically to GitHub Pages, Netlify, or Vercel without a backend database.
-*   **📡 IoT Extension View (Roadmap)**: An interactive tab presenting the planned integration architecture using ESP32, MQTT, Fusion ABA, and real-time analytical monitoring.
+*   **📡 IoT Extension View (Roadmap)**: An interactive tab presenting the planned integration architecture using ESP32, MQTT, n8n, and real-time analytical monitoring.
 *   **🩺 Medical Cold Chain Theme**: Custom color scheme utilizing medical navy blues (`#0f172a`, `#1e293b`) and ice/cyan blues (`#06b6d4`, `#0891b2`) to create a professional medical dashboard look.
 
 ---
@@ -59,7 +59,7 @@ coldmed-dashboard/
     *   *Unsupervised (Isolation Forest)*: Top 5 prioritizations, contamination sensitivity curve, and lot-specific anomaly timeline charts.
     *   *Supervised (Exploratory Classification)*: Accuracy and F1-score comparisons, confusion matrices, and feature importances for Decision Tree and Logistic Regression models.
 8.  **Audit & rapports (Audit & Reports)**: Displays a simulated traceability-reporting workflow and supports transparent review of the prototype’s analytical outputs.
-9.  **Extension IoT (IoT Extension)**: Presents the planned integration architecture using ESP32, MQTT, Fusion ABA and real-time analytical monitoring.
+9.  **Extension IoT (IoT Extension)**: Presents the planned integration architecture using ESP32, MQTT, n8n and real-time analytical monitoring.
 
 ---
 
