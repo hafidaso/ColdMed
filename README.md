@@ -59,22 +59,22 @@ ColdMed/
 
 ## 🔬 Jupyter Notebook Analysis & Modeling
 
-The Jupyter Notebook ([notebookbae73f2aa6.ipynb](file:///Users/hafida/Downloads/ColdMed/notebookbae73f2aa6.ipynb)) implements the complete data science pipeline:
+The Jupyter Notebook ([`notebookbae73f2aa6.ipynb`](./notebookbae73f2aa6.ipynb)) implements the complete data science pipeline:
 
 ### 1. Data Cleaning & Preprocessing
-*   **Audit**: Scans 26,674 rows of raw sensor telemetry for format mismatches and structural issues.
+*   **Audit**: Scans 26,674 historical thermal and logistics observations from an international vaccine distribution dataset.
 *   **Duplicate Control**: De-duplicates exact duplicate logs and resolves multiple conflicting records recorded within the same hour for a single batch.
 *   **Datetime Parsing**: Normalizes heterogeneous timestamp formats safely using mixed parsing (Month/Day/Year vs Day/Month/Year).
 
 ### 2. Analytical Quality Triage
 The notebook groups logs to build a **Batch Triage Summary** of 30 logical vaccine lots, evaluating:
-*   **Temperature Excursion**: Hours spent out of safe thermal boundaries (above 8°C).
+*   **Recorded Out-of-Bound Duration**: Hours identified as outside the expected thermal range in the source dataset. The 8°C reference is used only as a descriptive vigilance marker for refrigerated phases, not as a universal rule across the full cold-chain journey.
 *   **Refrigeration vs. Ultra-low Exposure**: Accumulation of hours spent in specific storage environments.
 *   **Expiration Signal**: Track of the time remaining before the batch expires.
 *   **Final Observed Outcomes**: Lots are labeled into three logical outcomes:
-    1.  `Livré au site de vaccination` (Delivered compliant)
-    2.  `Écart explicite observé` (Explicit quality discard)
-    3.  `Discordance à valider` (Mismatched telemetry requiring manual review)
+    1.  `Livré au site de vaccination` — arrival observed at the immunization site
+    2.  `Écart explicite observé` — an explicit discard-related logistics destination observed in the dataset
+    3.  `Discordance à valider` — a final-state discrepancy requiring review
 
 ### 3. Machine Learning Pipelines
 *   **Unsupervised Anomaly Detection (`Isolation Forest`)**:
@@ -82,7 +82,10 @@ The notebook groups logs to build a **Batch Triage Summary** of 30 logical vacci
     *   Features used: Contextual temperature deviation from the median, hourly temperature range, and temperature change rate.
     *   Includes a **Contamination Sensitivity Simulation** (ranging from 1% to 10%) to audit the behavior of the Isolation Forest flags.
 *   **Supervised Exploratory Classification**:
-    *   Explores signals associated with observed logistics outcomes without automating any quality decision (using exploratory `Logistic Regression` and `Decision Tree Classifier` models).
+    *   Explores signals associated with two observed logistics outcomes:
+        - arrival at the immunization site;
+        - explicit discard-related destination observed in the data.
+        This classification is exploratory only. It is not a regulatory compliance model and must not be used to automate quality decisions.
     *   Evaluated using **Leave-One-Out Cross-Validation (LOOCV)** due to the cohort constraint ($N=27$ valid training lots).
     *   Outputs feature importance matrices (showing that out-of-bounds exposure and refrigeration hours are the strongest predictors).
 
@@ -90,7 +93,7 @@ The notebook groups logs to build a **Batch Triage Summary** of 30 logical vacci
 
 ## 💻 Interactive Admin Dashboard
 
-The dashboard ([coldmed-dashboard](file:///Users/hafida/Downloads/ColdMed/coldmed-dashboard)) is a modern, responsive web application for pharmaceutical audit staff:
+The dashboard ([`coldmed-dashboard`](./coldmed-dashboard/)) is a modern, responsive web application for pharmaceutical audit staff:
 
 *   **Overview (Vue d'ensemble)**: Unified KPIs showing active counts, compliance alerts, and outcome breakdowns.
 *   **Batch Surveillance & Detail**: Inventory table showing comprehensive shipment details, with interactive thermal timelines (Recharts) and detailed sensor logs.
