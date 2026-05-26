@@ -1,0 +1,31 @@
+﻿batch_id,premiere_mesure,derniere_mesure,nombre_mesures,nombre_localisations,temperature_min,temperature_max,temperature_moyenne,humidite_moyenne,heures_hors_limite_max,heures_refrigeration_max,heures_ultra_low_max,expiration_min,presence_discarded,statut_analytique
+batch007,2021-03-01 01:00:00,2021-03-07 10:00:00,306,5,-71,15,-10.42,89.22,7,114,0,721,True,Lot dirigé vers stockage de vaccins écartés
+batch029,2021-08-01 01:00:00,2021-08-07 10:00:00,306,5,-71,14,-10.41,89.32,7,114,0,721,True,Lot dirigé vers stockage de vaccins écartés
+batch013,2020-11-01 01:00:00,2020-11-07 10:00:00,305,5,-71,10,-10.37,89.24,7,114,0,721,True,Lot dirigé vers stockage de vaccins écartés
+batch016,2021-02-01 01:00:00,2021-02-07 14:00:00,306,5,-71,14,-10.59,89.37,6,114,1,719,True,Lot dirigé vers stockage de vaccins écartés
+batch017,2021-03-01 01:00:00,2021-03-12 22:00:00,566,7,-71,14,-36.96,90.5,6,114,124,595,True,Lot dirigé vers stockage de vaccins écartés
+batch027,2021-06-01 01:00:00,2021-06-07 19:00:00,321,6,-71,14,-16.02,89.49,6,108,8,718,True,Lot dirigé vers stockage de vaccins écartés
+batch004,2020-12-01 01:00:00,2020-12-07 14:00:00,312,5,-71,13,-11.8,89.56,6,114,1,719,True,Lot dirigé vers stockage de vaccins écartés
+batch005,2021-01-01 01:00:00,2021-01-07 19:00:00,321,6,-71,13,-16.61,89.5,6,108,7,718,True,Lot dirigé vers stockage de vaccins écartés
+batch025,2021-07-01 01:00:00,2021-07-12 22:00:00,562,7,-71,13,-37.41,90.43,6,114,124,595,True,Lot dirigé vers stockage de vaccins écartés
+batch015,2021-03-01 01:00:00,2021-03-07 19:00:00,320,6,-71,12,-16.36,89.68,6,108,7,718,True,Lot dirigé vers stockage de vaccins écartés
+batch003,2020-11-01 01:00:00,2020-11-12 22:00:00,565,7,-71,10,-37.02,90.25,6,114,124,595,True,Lot dirigé vers stockage de vaccins écartés
+batch026,2021-08-01 01:00:00,2021-08-07 14:00:00,311,5,-71,13,-11.93,89.45,5,114,1,719,True,Lot dirigé vers stockage de vaccins écartés
+batch001,2020-09-01 01:00:00,2020-10-07 14:00:00,1734,7,-71,14,-58.03,92.46,1,119,720,-1,True,Lot dirigé vers stockage de vaccins écartés
+batch008,2021-04-01 01:00:00,2021-05-07 14:00:00,1736,7,-71,4,-58.17,92.46,1,120,720,-1,True,Lot dirigé vers stockage de vaccins écartés
+batch012,2020-10-01 01:00:00,2020-11-06 14:00:00,1743,7,-71,4,-57.9,92.49,1,120,720,-1,True,Lot dirigé vers stockage de vaccins écartés
+batch019,2020-12-01 01:00:00,2021-01-06 14:00:00,1742,7,-71,4,-58.02,92.5,1,120,720,-1,True,Lot dirigé vers stockage de vaccins écartés
+batch024,2021-06-01 01:00:00,2021-07-07 14:00:00,1726,7,-71,4,-57.97,92.47,1,120,720,-1,True,Lot dirigé vers stockage de vaccins écartés
+batch006,2021-02-01 01:00:00,2021-02-27 14:00:00,1259,7,-71,15,-53.84,91.61,6,114,480,239,False,Signal de température hors limite détecté
+batch014,2020-12-01 01:00:00,2020-12-27 14:00:00,1269,7,-71,13,-53.81,91.57,6,114,481,239,False,Signal de température hors limite détecté
+batch028,2021-07-01 01:00:00,2021-07-27 14:00:00,1264,7,-71,13,-53.83,91.64,6,114,480,239,False,Signal de température hors limite détecté
+batch002,2020-10-01 01:00:00,2020-10-13 07:00:00,577,7,-71,4,-64.49,92.03,1,13,240,586,False,Signal de température hors limite détecté
+batch009,2021-05-01 01:00:00,2021-05-18 07:00:00,825,7,-71,4,-65.34,92.16,1,13,360,466,False,Signal de température hors limite détecté
+batch010,2021-06-01 01:00:00,2021-06-13 07:00:00,587,7,-71,4,-64.51,92.08,1,13,240,586,False,Signal de température hors limite détecté
+batch011,2020-09-01 01:00:00,2020-09-18 07:00:00,821,7,-71,4,-65.51,92.28,1,13,360,466,False,Signal de température hors limite détecté
+batch018,2021-05-01 01:00:00,2021-05-23 07:00:00,1054,7,-71,4,-65.79,92.24,1,13,480,346,False,Signal de température hors limite détecté
+batch020,2020-11-01 01:00:00,2020-11-23 07:00:00,1057,7,-71,4,-65.75,92.26,1,13,480,346,False,Signal de température hors limite détecté
+batch021,2021-01-01 01:00:00,2021-01-28 07:00:00,1296,7,-71,4,-66.13,92.34,1,13,600,226,False,Signal de température hors limite détecté
+batch022,2020-12-01 01:00:00,2020-12-13 07:00:00,586,7,-71,4,-64.48,92.09,1,13,240,586,False,Signal de température hors limite détecté
+batch023,2021-02-01 01:00:00,2021-02-28 07:00:00,1296,7,-71,4,-66.15,92.28,1,13,600,226,False,Signal de température hors limite détecté
+batch030,2021-08-01 01:00:00,2021-08-28 07:00:00,1300,7,-71,4,-66.15,92.29,1,13,600,226,False,Signal de température hors limite détecté

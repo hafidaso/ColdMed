@@ -1,0 +1,19 @@
+﻿model_name,feature,importance_or_coefficient,absolute_importance,interpretation_type
+Logistic Regression,pre_heures_refrigeration_max,1.3443664522811216,1.3443664522811216,coefficient
+Logistic Regression,pre_nombre_transitions_stockage,-0.8754811088189093,0.8754811088189093,coefficient
+Logistic Regression,pre_temperature_moyenne,0.48772988629834196,0.48772988629834196,coefficient
+Logistic Regression,pre_expiration_min,-0.4173356552426266,0.4173356552426266,coefficient
+Logistic Regression,pre_temperature_max,0.38177638119003915,0.38177638119003915,coefficient
+Logistic Regression,pre_heures_hors_limite_max,0.36798089888221436,0.36798089888221436,coefficient
+Logistic Regression,pre_humidite_moyenne,-0.36301437549150434,0.36301437549150434,coefficient
+Logistic Regression,pre_heures_ultra_low_max,0.14828171631416895,0.14828171631416895,coefficient
+Logistic Regression,pre_nombre_localisations,-0.14123813086649384,0.14123813086649384,coefficient
+Decision Tree,pre_heures_refrigeration_max,1.0,1.0,gini_importance
+Decision Tree,pre_temperature_max,0.0,0.0,gini_importance
+Decision Tree,pre_temperature_moyenne,0.0,0.0,gini_importance
+Decision Tree,pre_heures_hors_limite_max,0.0,0.0,gini_importance
+Decision Tree,pre_heures_ultra_low_max,0.0,0.0,gini_importance
+Decision Tree,pre_expiration_min,0.0,0.0,gini_importance
+Decision Tree,pre_humidite_moyenne,0.0,0.0,gini_importance
+Decision Tree,pre_nombre_localisations,0.0,0.0,gini_importance
+Decision Tree,pre_nombre_transitions_stockage,0.0,0.0,gini_importance

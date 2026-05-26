@@ -1,0 +1,8 @@
+﻿KPI,Valeur
+Nombre total de lots analysés,30
+Lots livrés au site de vaccination,10
+Lots avec écart explicite observé,17
+Lots avec discordance à valider,3
+Lots avec expiration observée,5
+Lots avec durée hors limite >= 5 h,15
+Lots avec température maximale > 8°C,16

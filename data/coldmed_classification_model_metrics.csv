@@ -1,0 +1,3 @@
+﻿model_name,evaluation_method,number_of_batches,accuracy,balanced_accuracy,precision,recall,f1,methodological_warning
+Logistic Regression (Scaled),LeaveOneOut,27,1.0,1.0,1.0,1.0,1.0,"Échantillon extrêmement faible, résultats exploratoires uniquement."
+Decision Tree (max_depth=3),LeaveOneOut,27,1.0,1.0,1.0,1.0,1.0,"Échantillon extrêmement faible, résultats exploratoires uniquement."

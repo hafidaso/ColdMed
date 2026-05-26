@@ -1,0 +1,28 @@
+﻿batch_id,issue_finale_observee,pre_temperature_max,pre_temperature_moyenne,pre_heures_hors_limite_max,pre_heures_ultra_low_max,pre_heures_refrigeration_max,pre_expiration_min,pre_humidite_moyenne,pre_nombre_localisations,pre_nombre_transitions_stockage,target
+batch007,Écart explicite observé,8,-10.950980392156863,7,0,114,722,89.33006535947712,5,2,1
+batch029,Écart explicite observé,8,-10.954248366013072,7,0,114,722,89.43464052287581,5,2,1
+batch013,Écart explicite observé,8,-11.084967320261438,7,0,114,722,89.36601307189542,5,2,1
+batch016,Écart explicite observé,8,-12.643312101910828,6,1,114,720,89.63375796178345,5,2,1
+batch017,Écart explicite observé,-61,-69.53571428571429,0,1,0,839,94.94047619047619,5,2,1
+batch027,Écart explicite observé,-61,-69.4047619047619,0,1,0,839,94.97619047619048,5,2,1
+batch004,Écart explicite observé,8,-12.684713375796179,6,1,114,720,89.671974522293,5,2,1
+batch005,Écart explicite observé,-61,-69.41666666666667,0,1,0,839,94.96428571428571,5,2,1
+batch025,Écart explicite observé,-62,-69.51190476190476,0,1,0,839,94.94047619047619,5,2,1
+batch015,Écart explicite observé,-64,-69.51190476190476,0,1,0,839,94.97619047619048,5,2,1
+batch003,Écart explicite observé,-61,-69.42857142857143,0,1,0,839,94.94047619047619,5,2,1
+batch026,Écart explicite observé,8,-12.745222929936306,5,1,114,720,89.58917197452229,5,2,1
+batch001,Écart explicite observé,-61,-69.61842105263158,0,1,0,839,94.96052631578948,5,2,1
+batch008,Écart explicite observé,-61,-69.82894736842105,0,1,0,839,94.9342105263158,5,2,1
+batch012,Écart explicite observé,-62,-69.9342105263158,0,1,0,839,94.90789473684211,5,2,1
+batch019,Écart explicite observé,-63,-69.78947368421052,0,1,0,839,94.9342105263158,5,2,1
+batch024,Écart explicite observé,-62,-69.88157894736842,0,1,0,839,94.9342105263158,5,2,1
+batch002,Livré au site de vaccination,-61,-69.46428571428571,0,1,0,839,94.92857142857143,5,2,0
+batch009,Livré au site de vaccination,-63,-69.58333333333333,0,1,0,839,94.94047619047619,5,2,0
+batch010,Livré au site de vaccination,-63,-69.63095238095238,0,1,0,839,94.92857142857143,5,2,0
+batch011,Livré au site de vaccination,-64,-69.44047619047619,0,1,0,839,94.96428571428571,5,2,0
+batch018,Livré au site de vaccination,-61,-69.53571428571429,0,1,0,839,94.92857142857143,5,2,0
+batch020,Livré au site de vaccination,-63,-69.53571428571429,0,1,0,839,94.92857142857143,5,2,0
+batch021,Livré au site de vaccination,-62,-69.46428571428571,0,1,0,839,94.95238095238095,5,2,0
+batch022,Livré au site de vaccination,-61,-69.46428571428571,0,1,0,839,94.94047619047619,5,2,0
+batch023,Livré au site de vaccination,-61,-69.5952380952381,0,1,0,839,94.94047619047619,5,2,0
+batch030,Livré au site de vaccination,-61,-69.54761904761905,0,1,0,839,94.96428571428571,5,2,0

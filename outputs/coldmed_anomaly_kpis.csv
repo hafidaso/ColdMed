@@ -1,0 +1,8 @@
+﻿KPI,Valeur
+Profils horaires analysés,1906
+Profils signalés par Isolation Forest,39
+Lots contenant au moins un profil signalé,6
+Lots signalés avec écart explicite observé,6
+Lots signalés livrés au site,0
+Lots signalés avec discordance à valider,0
+Lots affichés dans le Top 5 prioritaire,5

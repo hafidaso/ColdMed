@@ -1,0 +1,4 @@
+﻿batch_id,date_fin_observee,localisation_finale,etape_finale,stockage_final,temperature_max,temperature_finale_min,temperature_finale_max,heures_hors_limite_max,expiration_min,niveau_revue_qualite
+batch006,2021-02-27 14:00:00,Jharkand,dest_vaccine_storage_unit,discarded_vaccine_storage_unit,15,13,15,6,239,Priorité critique - discordance à valider
+batch014,2020-12-27 14:00:00,Jharkand,dest_vaccine_storage_unit,discarded_vaccine_storage_unit,13,9,13,6,239,Priorité critique - discordance à valider
+batch028,2021-07-27 14:00:00,Jharkand,dest_vaccine_storage_unit,discarded_vaccine_storage_unit,13,13,13,6,239,Priorité critique - discordance à valider

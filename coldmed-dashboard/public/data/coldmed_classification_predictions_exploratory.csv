@@ -1,0 +1,28 @@
+﻿batch_id,issue_finale_observee,target,logistic_regression_oof_prediction,decision_tree_oof_prediction,disclaimer
+batch007,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch029,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch013,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch016,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch017,Écart explicite observé,1,1.0,0.0,Exploratoire et non-réglementaire
+batch027,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch004,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch005,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch025,Écart explicite observé,1,1.0,0.0,Exploratoire et non-réglementaire
+batch015,Écart explicite observé,1,0.0,0.0,Exploratoire et non-réglementaire
+batch003,Écart explicite observé,1,1.0,0.0,Exploratoire et non-réglementaire
+batch026,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch001,Écart explicite observé,1,1.0,0.0,Exploratoire et non-réglementaire
+batch008,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch012,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch019,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch024,Écart explicite observé,1,1.0,1.0,Exploratoire et non-réglementaire
+batch002,Livré au site de vaccination,0,1.0,0.0,Exploratoire et non-réglementaire
+batch009,Livré au site de vaccination,0,1.0,0.0,Exploratoire et non-réglementaire
+batch010,Livré au site de vaccination,0,1.0,1.0,Exploratoire et non-réglementaire
+batch011,Livré au site de vaccination,0,1.0,1.0,Exploratoire et non-réglementaire
+batch018,Livré au site de vaccination,0,1.0,0.0,Exploratoire et non-réglementaire
+batch020,Livré au site de vaccination,0,1.0,0.0,Exploratoire et non-réglementaire
+batch021,Livré au site de vaccination,0,1.0,0.0,Exploratoire et non-réglementaire
+batch022,Livré au site de vaccination,0,1.0,0.0,Exploratoire et non-réglementaire
+batch023,Livré au site de vaccination,0,1.0,0.0,Exploratoire et non-réglementaire
+batch030,Livré au site de vaccination,0,1.0,0.0,Exploratoire et non-réglementaire

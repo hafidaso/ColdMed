@@ -1,0 +1,7 @@
+﻿batch_id,nombre_profils_signales,anomaly_score_max,temperature_max_signalee,deviation_contextuelle_max,premiere_observation_signalee,derniere_observation_signalee,issue_finale_observee,niveau_revue_qualite,rang_priorite,is_top_5_priority
+batch013,6,0.05417882392426332,4,36.0,2020-11-02 09:00:00,2020-11-02 16:00:00,Écart explicite observé,Priorité élevée - excursion thermique prolongée,1,True
+batch007,6,0.052628640171730856,3,43.0,2021-03-02 09:00:00,2021-03-02 16:00:00,Écart explicite observé,Priorité élevée - excursion thermique prolongée,2,True
+batch029,8,0.052628640171730856,2,43.0,2021-08-02 09:00:00,2021-08-02 16:00:00,Écart explicite observé,Priorité élevée - excursion thermique prolongée,3,True
+batch004,6,0.051947768762622526,-1,63.0,2020-12-02 14:00:00,2020-12-02 19:00:00,Écart explicite observé,Priorité élevée - excursion thermique prolongée,4,True
+batch026,6,0.045272509196577326,3,49.0,2021-08-02 15:00:00,2021-08-02 20:00:00,Écart explicite observé,Priorité élevée - excursion thermique prolongée,5,True
+batch016,7,0.04374038478178088,3,59.0,2021-02-02 14:00:00,2021-02-02 20:00:00,Écart explicite observé,Priorité élevée - excursion thermique prolongée,6,False

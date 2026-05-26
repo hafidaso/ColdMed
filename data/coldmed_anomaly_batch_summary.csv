@@ -1,0 +1,6 @@
+﻿batch_id,nombre_heures_critiques,anomaly_score_max,temperature_max_anomalie,deviation_storage_max,refrigeration_hours_max,ultra_low_hours_max,item_expiry_hours_min,issue_finale_observee,niveau_revue_qualite
+batch009,4,0.175896558996691,4,70.0,5,360,474,Livré au site de vaccination,Surveillance - signal thermique enregistré
+batch010,4,0.17512342304970818,4,70.0,5,240,594,Livré au site de vaccination,Surveillance - signal thermique enregistré
+batch011,3,0.17564099514606857,4,70.0,5,360,474,Livré au site de vaccination,Surveillance - signal thermique enregistré
+batch013,26,0.17512342304970818,8,46.0,114,0,722,Écart explicite observé,Priorité élevée - excursion thermique prolongée
+batch021,3,0.17512342304970818,4,70.0,5,600,234,Livré au site de vaccination,Surveillance - signal thermique enregistré
