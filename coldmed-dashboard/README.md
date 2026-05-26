@@ -1,6 +1,6 @@
 # 🖥️ ColdMed Dashboard — Cold Chain Triage & Analytics Frontend
 
-This directory contains the interactive administrative dashboard for the **ColdMed** cold chain monitoring platform. Built using **React 19**, **TypeScript**, **Vite**, and styled with **Tailwind CSS**, it serves as a high-fidelity workspace for quality assurance auditors and logistics supervisors to monitor vaccine shipments, inspect machine learning anomalies, and review audit reports.
+This directory contains the interactive administrative dashboard for the **ColdMed** cold chain monitoring platform. Built using **React 19**, **TypeScript**, **Vite**, and styled with **Tailwind CSS**, it serves as a prototype workspace designed to illustrate how quality-review teams and logistics supervisors could explore vaccine cold-chain observations and analytical signals.
 
 ---
 
@@ -9,7 +9,7 @@ This directory contains the interactive administrative dashboard for the **ColdM
 *   **⚡ Modern Stack**: React 19, Vite, TypeScript, and Tailwind CSS.
 *   **📊 Interactive Visualizations**: Dynamic charts powered by `Recharts` for batch thermal profiles, anomaly timelines, and classification statistics.
 *   **📂 Direct CSV Ingestion**: Employs `PapaParse` to parse the Python notebook exports client-side, allowing the dashboard to be run locally or deployed statically to GitHub Pages, Netlify, or Vercel without a backend database.
-*   **📡 IoT Telemetry Simulator**: An interactive tab simulating live IoT telemetry streams with connection status checks and real-time out-of-bound alerts.
+*   **📡 IoT Extension View (Roadmap)**: An interactive tab presenting the planned integration architecture using ESP32, MQTT, Fusion ABA, and real-time analytical monitoring.
 *   **🩺 Medical Cold Chain Theme**: Custom color scheme utilizing medical navy blues (`#0f172a`, `#1e293b`) and ice/cyan blues (`#06b6d4`, `#0891b2`) to create a professional medical dashboard look.
 
 ---
@@ -49,17 +49,17 @@ coldmed-dashboard/
 
 ## 🛠️ Dashboard Pages
 
-1.  **Vue d'ensemble (Overview)**: General KPIs (shipped, delivered, anomalies), interactive pie chart of outcomes, and quick access to top quality alerts.
+1.  **Vue d'ensemble (Overview)**: Validated KPIs for analysed batches, observed immunization-site arrivals, explicit discard-related outcomes, validation discrepancies and analytical signals.
 2.  **Surveillance des lots (Surveillance)**: Main searchable data table showing the inventory of all 30 vaccine batches and their current status.
 3.  **Détail du lot (Batch Detail)**: Interactive temperature and humidity charts for individual batches, showing full step-by-step audit logs.
 4.  **Analyse thermique (Thermal Analysis)**: Evaluates thermal profiles, maximum temperatures, and cumulative time-out-of-bounds across all lots.
-5.  **Revue qualité (Quality Review)**: Workboard listing shipments with critical quality flags (expired or mismatched) with checklists for managers to sign off.
+5.  **Revue qualité (Quality Review)**: Workboard listing shipments with critical quality flags (expired or mismatched) with a simulated review workflow for examining critical signals and documenting prototype review actions.
 6.  **Traçabilité logistique (Logistics Traceability)**: Analysis of transportation hops and storage units, displaying average temperatures and transit times.
 7.  **Intelligence analytique (Analytical Intelligence)**: Displays ML-based diagnostics:
     *   *Unsupervised (Isolation Forest)*: Top 5 prioritizations, contamination sensitivity curve, and lot-specific anomaly timeline charts.
     *   *Supervised (Exploratory Classification)*: Accuracy and F1-score comparisons, confusion matrices, and feature importances for Decision Tree and Logistic Regression models.
-8.  **Audit & rapports (Audit & Reports)**: Generates reports, reviews analytical compliance, and tests the integrity of the data files.
-9.  **Extension IoT (IoT Extension)**: Telemetry stream simulator showing real-time temperature fluctuations, connection indicators, and sensor batteries.
+8.  **Audit & rapports (Audit & Reports)**: Displays a simulated traceability-reporting workflow and supports transparent review of the prototype’s analytical outputs.
+9.  **Extension IoT (IoT Extension)**: Presents the planned integration architecture using ESP32, MQTT, Fusion ABA and real-time analytical monitoring.
 
 ---
 
@@ -70,12 +70,13 @@ The dashboard fetches data directly from the files located in the `public/data/`
 | Filename | Purpose |
 | :--- | :--- |
 | `coldmed_batch_dashboard_corrige.csv` | General batch records (temperatures, storage hours, alerts) |
+| `coldmed_final_state_corrige.csv` | Final observed state for each batch after hourly aggregation |
 | `coldmed_kpis_dashboard_corrige.csv` | Core dashboard KPI values |
 | `coldmed_lots_a_valider.csv` | Batches marked with critical alerts for quality review |
 | `coldmed_anomaly_scores.csv` | Full telemetry observations with Isolation Forest scores |
-| `coldmed_anomaly_flagged_observations.csv` | Telemetry observations flagged as anomalies |
+| `coldmed_anomaly_flagged_observations.csv` | Hourly thermal profiles flagged by the exploratory Isolation Forest model |
 | `coldmed_anomaly_batch_summary.csv` | Batch-level anomaly metrics |
-| `coldmed_anomaly_top5_priority.csv` | Top 5 anomalous batches for review |
+| `coldmed_anomaly_top5_priority.csv` | Top 5 priority batches ranked by exploratory atypicality score |
 | `coldmed_anomaly_kpis.csv` | Anomaly statistics KPIs |
 | `coldmed_anomaly_sensitivity.csv` | Isolation forest contamination sensitivity simulation |
 | `coldmed_classification_model_metrics.csv` | Classifier evaluation scores (Accuracy, F1, etc.) |
