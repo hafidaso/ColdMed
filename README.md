@@ -12,7 +12,7 @@
 
 ## 🗺️ System Architecture
 
-The pipeline processes historical distribution data, analyzes thermal behavior, detects anomalies, and feeds the dashboard with curated CSV layers:
+The pipeline detects atypical thermal profiles and explores signals associated with observed logistics outcomes, without automating any regulatory or quality decision. The historical dataset is analyzed and the resulting data layers are exported to feed the dashboard:
 
 ```mermaid
 graph TD
@@ -82,7 +82,7 @@ The notebook groups logs to build a **Batch Triage Summary** of 30 logical vacci
     *   Features used: Contextual temperature deviation from the median, hourly temperature range, and temperature change rate.
     *   Includes a **Contamination Sensitivity Simulation** (ranging from 1% to 10%) to audit the behavior of the Isolation Forest flags.
 *   **Supervised Exploratory Classification**:
-    *   Predicts final batch status (Comply vs. Discard) using `Logistic Regression` and `Decision Tree Classifier` (max_depth=3).
+    *   Explores signals associated with observed logistics outcomes without automating any quality decision (using exploratory `Logistic Regression` and `Decision Tree Classifier` models).
     *   Evaluated using **Leave-One-Out Cross-Validation (LOOCV)** due to the cohort constraint ($N=27$ valid training lots).
     *   Outputs feature importance matrices (showing that out-of-bounds exposure and refrigeration hours are the strongest predictors).
 
