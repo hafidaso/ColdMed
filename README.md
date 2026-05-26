@@ -34,6 +34,41 @@ graph TD
 
 ---
 
+## 📌 Validated Analytical Results
+
+### Descriptive dashboard indicators
+
+| Indicator | Value |
+| --- | ---: |
+| Vaccine batches analysed | 30 |
+| Batches observed reaching the immunization site | 10 |
+| Batches with an explicit discard-related outcome | 17 |
+| Batches with a final-state discrepancy requiring validation | 3 |
+| Batches with an observed expiration signal | 5 |
+| Batches with prolonged out-of-bound exposure | 15 |
+| Batches with a maximum reading above 8°C | 16 |
+
+### Exploratory analytical intelligence
+
+| Indicator | Value |
+| --- | ---: |
+| Comparable hourly thermal profiles analysed | 1,906 |
+| Profiles flagged by Isolation Forest | 39 |
+| Batches containing at least one flagged profile | 6 |
+| Flagged batches associated with an explicit discard-related outcome | 6 |
+| Batches displayed in the Top 5 priority view | 5 |
+
+### Exploratory classification
+
+| Model | Accuracy | Balanced Accuracy | F1 Score |
+| --- | ---: | ---: | ---: |
+| Logistic Regression | 0.593 | 0.471 | 0.744 |
+| Decision Tree | 0.741 | 0.753 | 0.774 |
+
+> These results are exploratory and dataset-specific. They do not represent regulatory validation, automatic rejection decisions, or operational deployment performance.
+
+---
+
 ## 📂 Project Structure
 
 ```
