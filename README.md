@@ -6,27 +6,30 @@
 [![Tailwind CSS](https://img.shields.io/badge/tailwindcss-4.0-blueviolet.svg)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-**ColdMed** is an end-to-end prototype of an intelligent cold chain monitoring and quality triage system designed for temperature-sensitive pharmaceuticals (e.g., vaccines, insulin, and biologics). The platform bridges advanced data science modeling with an interactive administrative dashboard to enable swift quality reviews, anomaly detection, and logistics auditing.
+**ColdMed Trace Souss** is an analytical prototype for vaccine cold-chain traceability and quality-review prioritisation. It uses an international historical vaccine distribution dataset to explore thermal behaviour, observed logistics outcomes, atypical thermal profiles, and decision-support visualisations.
 
 ---
 
 ## 🗺️ System Architecture
 
-The pipeline processes hourly telemetry reports from thermal sensors attached to vaccine shippers and storage units, detects anomalous behavior, predicts quality outcomes, and displays results in a high-fidelity React dashboard:
+The pipeline processes historical distribution data, analyzes thermal behavior, detects anomalies, and feeds the dashboard with curated CSV layers:
 
 ```mermaid
 graph TD
-    A[Raw IoT Sensor Data] -->|CSV| B[Jupyter Notebook Analysis]
-    B -->|1. Data Cleaning & Cleaning| B1[Quality Audit & Standardization]
-    B -->|2. Unsupervised Learning| B2[Isolation Forest Anomaly Detection]
-    B -->|3. Supervised Modeling| B3[LOOCV Classification Triage]
-    
-    B1 & B2 & B3 -->|Exported CSVs| C[Dashboard Data Folder]
-    
-    C -->|Public Data Feed| D[React Dashboard Web App]
-    D -->|Triage Views| D1[Overview & Triage Alerts]
-    D -->|ML Insights| D2[Analytical Intelligence Tab]
-    D -->|Simulations| D3[IoT Live Stream & Audits]
+    A[International Historical Vaccine Distribution Dataset] -->|CSV| B[Python / Jupyter Analysis]
+    B --> B1[Data Cleaning & Hourly Aggregation]
+    B --> B2[Contextual Thermal Analysis]
+    B --> B3[Exploratory Isolation Forest Scoring]
+    B --> B4[Exploratory Outcome Classification]
+
+    B1 & B2 & B3 & B4 -->|Validated CSV Exports| C[React Dashboard Data Layer]
+
+    C --> D[ColdMed Trace Dashboard]
+    D --> D1[Traceability Overview]
+    D --> D2[Quality Review Prioritisation]
+    D --> D3[Analytical Intelligence]
+
+    E[Future Phase: ESP32 + MQTT + n8n] -.-> D
 ```
 
 ---
