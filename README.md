@@ -10,6 +10,21 @@
 
 ---
 
+## ⚠️ Scope and Data Limitations
+
+This project is based on an international historical vaccine distribution dataset. The data do not originate from Souss-Massa or from a live Moroccan cold-chain deployment.
+
+`Souss-Massa` represents the future target context for adapting the prototype.
+
+The analytical outputs are designed to support exploratory quality review:
+
+- observed final outcomes are not official regulatory decisions;
+- Isolation Forest flags atypical thermal profiles for examination, not confirmed causes of discard;
+- classification results are exploratory because of the limited number of batches available;
+- the IoT architecture is a future extension and is not the source of the current analytical data.
+
+---
+
 ## 🗺️ System Architecture
 
 The pipeline detects atypical thermal profiles and explores signals associated with observed logistics outcomes, without automating any regulatory or quality decision. The historical dataset is analyzed and the resulting data layers are exported to feed the dashboard:
